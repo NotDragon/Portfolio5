@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.14.3/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
+    <script src="../../app.js"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <title>Michalis Chatzittofi - 5G</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/5G">&larr; Back to Previous Page</a>
+    </div>
+    <div class="main">
+
+        <img class="center top" src="../../img/Top_5G.png">
+        <div id="about" class="panel first">
+            <u class="fontGillSans">
+                <h3>About</h3>
+            </u>
+            <p>
+                5G (5th generation) is the new generation of technology, and it's not uncommon to hear critisisms about
+                5G. So how many of the critisisms are true?
+            </p><br>
+        </div>
+
+        <div id="5g" class="panel">
+            <u class="fontGillSans">
+                <h3>What is 5G?</h3>
+            </u>
+            <p>
+                5G is the news generation of technology and it allows us to do things faster and do more thing at once.
+            <ul>
+                <u>
+                    <h4>Faster:</h4>
+                </u>5G is up to 100 times faster then the 4G<br>
+                <u>
+                    <h4>Number of devices:</h4>
+                </u>5G can support up to 1 million connected devices per 98 square kilometers<br>
+            </ul>
+            </p>
+            <br>
+        </div>
+
+        <div id="criticisms" class="panel">
+            <u class="fontGillSans">
+                <h3>Criticisms</h3>
+            </u>
+            <p>
+                5G has been criticised for when it was released. This are the main critisism:
+            <ul>
+                - Unhealthy <br>
+                - Unnecessary <br>
+            </ul>
+            </p>
+            <br>
+        </div>
+        <div id="data" class="panel">
+            <u class="fontGillSans">
+                <h3>Servey and Data</h3>
+            </u>
+            <p>
+                We made a servey that 111 people took. This are the answers they gave
+                <canvas id="gender"></canvas><br>
+                <canvas id="age"></canvas><br>
+                <canvas id="education"></canvas><br>
+                <canvas id="live"></canvas><br>
+                <canvas id="doyouknow"></canvas><br>
+                <canvas id="comfortable"></canvas><br>
+                <canvas id="worth"></canvas><br>
+                <canvas id="access"></canvas>
+            </p>
+        </div>
+        <script>
+
+            var xValues = ["Male", "Female", "Prefer not to say"];
+            var yValues = [45, 61, 5];
+            var barColors = [
+                "#613d44",
+                "rgb(53, 136, 178)",
+                "#fcba03",
+                "#575347",
+                "#184a19",
+                "#1ab077",
+                "#1c1d45",
+                "#451c24"
+
+            ];
+            new Chart("gender", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Whats is your gender?"
+                    }
+                }
+            });
+
+            xValues = ["11-20", "21-30", "31-40", "41-50", "51-60", "61+"];
+            yValues = [40, 22, 11, 21, 9, 8];
+            new Chart("age", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Whats is your age?"
+                    }
+                }
+            });
+
+            xValues = ["Currently in University ( First degree)", "High school", "Primary school", "First degree", "Higher Studies"];
+            yValues = [21, 36, , 30, 15];
+            new Chart("education", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Whats is your education?"
+                    }
+                }
+            });
+
+            xValues = ["Nicosia", "Limasol", "Paphos", "Larnaka", "Famagusta"];
+            yValues = [72, 2, 3, 32, 2];
+            new Chart("live", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Where do you live?"
+                    }
+                }
+            });
+
+            xValues = ["Yes", "No", "I'm not sure"];
+            yValues = [84, 7, 19];
+            new Chart("doyouknow", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Do you know what 5G is?"
+                    }
+                }
+            });
+
+            xValues = ["1", "2", "3", "4", "5"];
+            yValues = [6, 3, 17, 37, 48];
+            new Chart("comfortable", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "How comfortable are you with 5G?"
+                    }
+                }
+            });
+
+            xValues = ["1", "2", "3", "4", "5"];
+            yValues = [6, 6, 25, 39, 35];
+            new Chart("worth", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Do you think that 5G is worth pursuing?"
+                    }
+                }
+            });
+
+            xValues = ["Already have access", "Within a year", "In a year or later"];
+            yValues = [26, 3, 43];
+            new Chart("access", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "When do you expect to have access to 5G?"
+                    }
+                }
+            });
+
+        </script>
+    </div>
+</body>
+
+</html>

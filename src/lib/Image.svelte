@@ -50,11 +50,8 @@
 	  id="{id}"
 	  style="
 				{!isFocused?
-				 'filter: brightness(50%) saturate(75%);'
+				 'filter: brightness(75%) saturate(75%);'
 				 : ''}
-				{isHovering && isFocused && !$isTabOpen?
-					'transform: scale(1.1, 1.1);':
-					''}
 				{isHovering?
 					'cursor: pointer;':
 					''}">

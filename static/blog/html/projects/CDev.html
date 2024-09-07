@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../app.js"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <title>Michalis Chatzittofi - CDev</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../../index.html">&larr; Back to the Main Page</a>
+    </div>
+    <div class="main">
+
+        <img class="center top" src="../../img/Top_CDev.png">
+
+        <div id="about" class="panel first">
+            <u class="fontGillSans">
+                <h3>About</h3>
+            </u>
+            <p>
+                CDev is a functional (no classes), staticly typed programing language that's designed to be used for
+                teaching purpuses. CDev is writen in C#.
+            </p><br>
+        </div>
+
+        <div id="io" class="panel">
+            <u class="fontGillSans">
+                <h3>Printing and Input</h3>
+            </u>
+            <p>
+                To print something or get user input in CDev the 2 pre-defined functions <func>Write</func>() and <func>
+                    Read</func>().
+            <div class="cdevpanel">
+                <p>
+                    <func>Write</func>(<string>"Enter your name"</string>);<br><br>
+                    <vname>name</vname> = <func>Read</func>();<br><br>
+                    <func>Write</func>(<string>"Hello "</string>, &nbsp;<vname>name</vname>);
+                </p>
+            </div>
+            <u class="fontGillSans">
+                <h4>Write</h4>
+            </u>
+            <p>
+                Automatically the <func>Write</func>() function will create a new line when it finishes. As the example
+                above shows you it is possible to pass multipile arguments to it that will be printed in the same line.
+            </p>
+
+            <u class="fontGillSans">
+                <h4>Read</h4>
+            </u>
+            <p>
+                The <func>Read</func>() function will return what the user inputs.
+            </p>
+            <br>
+            </p>
+        </div>
+
+        <div id="variabledec" class="panel">
+            <u class="fontGillSans">
+                <h3>Variable declaration</h3>
+            </u>
+            <p>
+                In CDev there are three types of variable declerations and this look somehing like this:
+            <div class="cdevpanel">
+                <p>
+                    <def>def</def>
+                    <vname>i</vname>: <v>int</v> = <num>10</num>;&emsp; <com>//typed</com><br><br>
+                    <def>def</def>
+                    <vname>i</vname> = <string>"Hello World"</string>;&emsp; <com>//automatic</com><br><br>
+                    <def>def</def>
+                    <vname>i</vname>;&emsp; <com>//null</com><br>
+                </p>
+            </div><br>
+            <u class="fontGillSans">
+                <h4>1. Typed</h4>
+            </u>
+            <p>
+                Declearing a variable this way will require a type to be specified after the name of the variable. This
+                will create a variable that has a specific type, in this case, <v>int</v>. that types can be the
+                following:
+            <ul>
+                - <v>int</v>: Intiger number<br>
+                - <v>float</v>: Decimal number<br>
+                - <v>bool</v>: True or False<br>
+                - <v>string</v>: Word, sentence or character<br>
+                - <v>any</v>: Can be any of the above<br>
+            </ul>
+            Note that once you declear a variable you can not change its type. Also note that passing a value is not
+            needed.
+            </p>
+            </p><br>
+
+            <u class="fontGillSans">
+                <h4>2. Automatic</h4>
+            </u>
+            <p>
+                Declearing a variable this way will require a value be given after the variable name. This will work the
+                same way as a typed declaration except the language will automatically dicite the type of the variable.
+            </p>
+            </p><br>
+
+            <u class="fontGillSans">
+                <h4>3. Null</h4>
+            </u>
+            <p>
+                Declearing a variable this way will require that neither a value or a type shall be specified. Creating
+                a variable in this way will give the variable the type <v>null</v>. When assigning a value to it, it
+                will automatically change its type
+                to the one of the value assignned to it.
+            </p>
+            </p><br>
+        </div>
+
+        <div id="arrays" class="panel">
+            <u class="fontGillSans">
+                <h3>Arrays, Lists and Dictionaries</h3>
+            </u>
+            <p>
+                <u class="fontGillSans">
+                    <h4>Arrays</h4>
+                </u>
+
+                To create and array it is requred that after the type a, in brakets, the size is given. Like this:
+            <div class="cdevpanel">
+                <def>def</def>: <v>int</v>
+                <func>[</func>
+                <num>10</num>
+                <func>]</func>
+                <vname>i</vname>;<br>
+            </div>
+
+            <u class="fontGillSans">
+                <h4>Lists</h4>
+            </u>
+
+            If a size is not spesifed then a List will be created. A list is a dynamic array that will change it's size
+            depending on how much nontent is in it. This is how it can be done:
+            <div class="cdevpanel">
+                <def>def</def>
+                <vname>i</vname>: <v>string</v>
+                <func>[]</func>;<br>
+            </div>
+
+            <u class="fontGillSans">
+                <h4>Dictionaries</h4>
+            </u>
+            A dictionary has 2 parts, value and code. Each code represents one velue, like a hash map. The syntax to
+            declear dictionaries is different then the rest. It is as following:
+            <div class="cdevpanel">
+                <def>def</def>
+                <vname>i</vname>: <def>dictionary</def>
+                <func>[</func>
+                <v>float</v>
+                <func>]</func>;<br>
+            </div>
+            This will create a dictionary that stores float numbers. But its code can be anything. For example.
+
+            <div class="cdevpanel">
+                <vname>i</vname>
+                <func>[</func>
+                <string>"Age"</string>
+                <func>]</func> = <num>19.7</num>;<br>
+            </div>
+
+            In this case the code is <string>"Age"</string> and the value is <num>19.7</num>.Now getting the age is a
+            simple as this:
+            <div class="cdevpanel">
+                <func>Write</func>(<vname>i</vname>
+                <func>[</func>
+                <string>"Age"</string>
+                <func>]</func>);<br>
+            </div>
+
+            </p><br>
+
+        </div>
+
+        <div id="if" class="panel">
+            <u class="fontGillSans">
+                <h3>If Statements</h3>
+            </u>
+            <p>
+                The if statement in CDev is the same as C's. Its syntax is this:
+            <div class="cdevpanel">
+                <p>
+                    <statement>if</statement>(<vname>condition</vname>){<br>
+                    &emsp;<com>//code</com><br>
+                    }<statement>else if</statement>(<vname>condition</vname>){<br>
+                    &emsp;<com>//more code</com><br>
+                    }<statement>else</statement>{<br>
+                    &emsp;<com>//more code</com><br>
+                    }
+                </p>
+            </div>
+            </p><br>
+        </div>
+
+        <div id="loops" class="panel">
+            <u class="fontGillSans">
+                <h3>Loops</h3>
+            </u>
+            <p>
+                There are 3 different types of loops in CDev. <statement>while</statement> loop, <statement>dowhile
+                </statement> loop and <statement>repeat</statement> loop. This is how to loop through something 10 times
+                in each loop:
+            <div class="cdevpanel">
+                <p>
+                    <def>def</def>
+                    <vname>i</vname> = <num>0</num>;<br><br>
+                    <statement>while</statement>(<vname>i</vname> &gt <num>10</num>){<br>
+                    &emsp;<vname>i</vname>+=<num>1</num>;<br>
+                    }
+                </p>
+            </div><br>
+
+            <div class="cdevpanel">
+                <p>
+                    <def>def</def>
+                    <vname>i</vname> = <num>0</num>;<br><br>
+                    <statement>dowhile</statement>(<vname>i</vname> &gt <num>10</num>){<br>
+                    &emsp;<vname>i</vname>+=<num>1</num>;<br>
+                    }
+                </p>
+            </div><br>
+
+            <div class="cdevpanel">
+                <p>
+                    <statement>repeat</statement>(<num>10</num>){<br><br>}
+                </p>
+            </div>
+            <u class="fontGillSans">
+                <h4>Repeat</h4>
+            </u>
+            The most different one from C is the <statement>repeat</statement> loop that replaces the <statement>for
+            </statement> loop. By default a variable name <vname>i</vname> will be created with the value 0. Every
+            itteration it will be incomented
+            by 1. If there's a variable named <vname>i</vname> already it will call it <vname>j</vname>, if <vname>j
+            </vname> is taken then it will call it <vname>k</vname>. It is possible to give a name to the variable after
+            the numbner of itterations like so:
+            <div class="cdevpanel">
+                <statement>repeat</statement>(<num>10</num>: <vname>varname</vname>){<br><br>}
+            </div>
+
+            An initial value can be assinged to it like so:
+            <div class="cdevpanel">
+                <statement>repeat</statement>(<num>10</num>: <vname>varname</vname> = <num>5</num>){<br><br>}
+            </div>
+            And the amount that it iwll be incramented by can be given like so:
+
+            <div class="cdevpanel">
+                <statement>repeat</statement>(<num>10</num>: <vname>varname</vname> = <num>5</num>; <num>2</num>
+                ){<br><br>}
+            </div>
+
+            Instead of the number of itewrations, at the start, a list can be passed of value that thebe assinged to the
+            variable. This can be done like so:
+            <div class="cdevpanel">
+                <statement>repeat</statement>([<num>1</num>, <num>2</num>, <num>3</num>, <num>7</num>, <num>100</num>]:
+                <vname>varname</vname>){<br><br>}
+            </div>
+
+            <u class="fontGillSans">
+                <h4>While</h4>
+            </u>
+            The <statement>while</statement> loop had alsmost no changes from C except one. The ability to have an
+            <statement>else if</statement> block after the while loop. The syntax goes as following:
+            <div class="cdevpanel">
+                <statement>while</statement>(<num>1</num> &gt <num>0</num>){<br><br>} <statement>else if</statement>(
+                <num>10</num> &lt <num>100</num>){<br><br>} <statement>else</statement>{<br><br>}
+            </div>
+            This would corispond to the following in C:
+            <div class="cdevpanel">
+                <statement>if</statement>(<num>1</num> &gt <num>0</num>){<br> &emsp;<statement>while</statement>(<num>1
+                </num> &gt <num>0</num>){<br><br> &emsp;}<br>} <statement>else if</statement>(<num>10</num> &lt <num>100
+                </num>){<br><br>} <statement>else</statement>{<br><br>}
+            </div>
+
+            <u class="fontGillSans">
+                <h4>Dowhile</h4>
+            </u>
+            The <statement>dowhile</statement> loop is the same as the <statement>while</statement> loop, exept it will
+            execute the code in it's block atleast once, no mater if the conditions is false.
+            </p><br>
+        </div>
+
+        <div id="function" class="panel">
+            <u class="fontGillSans">
+                <h3>Function Declaration</h3>
+            </u>
+            <p>
+                Declearing a function in CDev is very similar to a declearing a varialbe. The syntax is the following:
+            <div class="cdevpanel">
+                <def>func</def>
+                <func>ReturnHelloWorld</func>(): <v>string</v>{<br> &emsp;<statement>return <string>"Hello World"
+                    </string>
+                </statement>;<br>}
+            </div>
+            The type of the function must be one of the following depending on what the functions returns:
+            <ul>
+                - <v>int</v>: Returns an intiger number<br>
+                - <v>float</v>: Returns a decimal number<br>
+                - <v>string</v>: Returns a sentence, word or character<br>
+                - <v>bool</v>: Returns True or False<br>
+                - <v>any</v>: Returns any of the above<br>
+                - <v>void</v>: Doesn't return anything<br>
+            </ul>
+            Unlike variable declaration, a type must be given.
+            <u class="fontGillSans">
+                <h4>Arguments and Parameters</h4>
+            </u>
+            To create a parameter you must specify the type of the variable and the name, without the keyword <def>def
+            </def>. Parameters must be seperate4d by commas.<br><br>Arguments can be passed the same ways as C.
+            <div class="cdevpanel">
+                <def>func</def>
+                <func>SayHello</func>(<v>string</v>
+                <vname>name</vname>): <v>void</v>{<br> &emsp;<func>Write</func>(<string>"Hello "</string>, <vname>name
+                </vname>);<br>}<br><br>
+                <func>SayHello</func>(<string>"World!"</string>);
+            </div>
+
+            </p><br>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,6 @@
+<script lang="ts">
+</script>
+
 <main class="grid-container">
     <slot/>
 </main>

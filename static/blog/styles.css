@@ -1,0 +1,163 @@
+:root {
+    font: 15px/1.2 "Robot", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.right {
+    text-align: right;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    padding: 6px 10px 6px 7px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-top: 100px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {
+        padding-top: 15px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        padding-right: 5vw;
+        padding-left: 15vw;
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9%;
+}
+
+.fontGillSans {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.panel {
+    border-radius: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 0.4vw;
+    padding-top: 0.02vw;
+    padding-bottom: 0;
+    background-image: url("./img/Panel.png");
+    background-size: cover;
+    margin: 3vh;
+}
+
+.cdevpanel {
+    border-radius: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 0.4vw;
+    padding-top: 0.02vw;
+    padding-bottom: 0.1vw;
+    background-color: #161718;
+    background-size: cover;
+    margin: 3vh;
+}
+
+
+.top {
+    border-radius: 0.5vh;
+    background-attachment: fixed;
+    margin: auto;
+    border: 0px;
+    width: 94%;
+}
+
+.first {
+    margin-top: 0vh;
+}
+
+body {
+    color: white;
+    background-color: #010304;
+}
+
+func {
+    color: #dcdcaa;
+}
+
+string {
+    color: #ce9178;
+}
+
+vname {
+    color: #9cdcfe;
+}
+
+def {
+    color: #3e9cd6;
+}
+
+v {
+    color: #4ec9b0;
+}
+
+statement {
+    color: #3e9cd6;
+}
+
+num {
+    color: #b5cea8;
+}
+
+com {
+    color: #52993e;
+}
+
+:link {
+    color: #768fad;
+}
+
+a,
+:visited {
+    text-decoration: none;
+    color: #9abae1;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #617792;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
