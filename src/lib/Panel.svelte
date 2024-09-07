@@ -3,7 +3,7 @@
 	import { onMount } from "svelte";
 
     export let src = '';
-    export let onclick: Function | undefined;
+    export let onclick: Function | undefined = undefined;
 </script>
 
 <main class="panel" on:click={ e =>{ onclick? onclick(): window.open(src, "_blank") }}>
