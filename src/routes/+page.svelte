@@ -18,7 +18,7 @@
 			   id="about">
 			   	<h3>Introduction</h3>
 				<p>
-					Hello! I'm Michalis Chatzittofi, a student passionate about programming and STEM. I love solving and identifying complex problems through code and turning innovative ideas into reality. From a very young age, I was fascinated with anything to do with science and electronics. As a child I would frequently take apart electrical appliances, components and modules, to learn how they work on the inside, and ultimately try to reassemble it. 
+					Hello! I'm Michalis Chatzittofi, a 15-year-old student passionate about programming and STEM. I love solving and identifying complex problems through code and turning innovative ideas into reality. From a very young age, I was fascinated with anything to do with science and electronics. As a child I would frequently take apart electrical appliances, components and modules, to learn how they work on the inside, and ultimately try to reassemble it. 
 				</p>
 				<p>
 					When I learned how computers work, I became obsessed with them. Specifically, I became very interested in creating something out of nothing. Computers gave me the ability to manifest my imaginations into reality in a world of no limits. I started of making basic games in software such as Scratch and soon moved on to my first “real” programming language, C++. Since then, I have learned how to use countless tools in a myriad of different programming languages. 
@@ -134,7 +134,7 @@
 						</p>
 					</Panel>
 
-					<Panel onclick={() => { goto('/Debates') }} src="https://images.unsplash.com/photo-1607778102165-6a418ee9adf2?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+					<Panel onclick={() => { goto('/') }} src="https://images.unsplash.com/photo-1607778102165-6a418ee9adf2?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 						<h4>Debates</h4>
 						<p>
 							One of my favourite things to do is debate on a topic. Debating is certainly a skill that is very hard to master. It requires a combination of well-structured arguments, as well as being ready for what your opponent might through at you and being able to counter it. There is something thrilling about catching your opponent off guard by troughing a curve ball at them or cornering them by using their own arguments
