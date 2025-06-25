@@ -7,7 +7,6 @@
 	import Grid from "$lib/Grid.svelte";
 	import Panel from "$lib/Panel.svelte";
 	import { goto } from '$app/navigation';
-	import { redirect } from "@sveltejs/kit";
 
 </script>
 
@@ -18,7 +17,7 @@
 			   id="about">
 			   	<h3>Introduction</h3>
 				<p>
-					Hello! I'm Michalis Chatzittofi, a 15-year-old student passionate about programming and STEM. I love solving and identifying complex problems through code and turning innovative ideas into reality. From a very young age, I was fascinated with anything to do with science and electronics. As a child I would frequently take apart electrical appliances, components and modules, to learn how they work on the inside, and ultimately try to reassemble it. 
+					Hello! I'm Michalis Chatzittofi, a 16-year-old student passionate about programming and STEM. I love solving and identifying complex problems through code and turning innovative ideas into reality. From a very young age, I was fascinated with anything to do with science and electronics. As a child I would frequently take apart electrical appliances, components and modules, to learn how they work on the inside, and ultimately try to reassemble it. 
 				</p>
 				<p>
 					When I learned how computers work, I became obsessed with them. Specifically, I became very interested in creating something out of nothing. Computers gave me the ability to manifest my imaginations into reality in a world of no limits. I started of making basic games in software such as Scratch and soon moved on to my first “real” programming language, C++. Since then, I have learned how to use countless tools in a myriad of different programming languages. 
